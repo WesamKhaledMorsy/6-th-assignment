@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --home-background:#D36067;
+    --secton2-header-background-color:#E68285;
+    --section2-paragraph-background-color:#CCCCCC;
+    --headers-color:#444444;
+    font-size: 16px;
+}
+@media screen and (max-width:540px) {
+    :root{
+        font-size: 14px;
+    }
+}
+main{height: 1000px;}
+/*start home section */
+#home{
+    width:100%;
+    height: 100vh;   
+    background: url('../images/events-heavenly-header.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#home .homeLayer{
+    width:100%;
+    height: 100vh;
+    background-color: rgba(244, 38, 52, 0.7);
+    
+}
+#home .homeLayer .home-content{
+    width:60%;
+    position: relative;
+    top:40%;
+    text-align: center;    
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#home .homeLayer .home-content h1{
+    font-size: 4rem;
+}
+.side-home{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    z-index: 999;
+}
+.side-home span{
+    color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+    left: 0rem;
+    top:25rem;
+}
+@media screen and (max-width:540px) {
+    .side-home span{
+        color: #fff;
+        font-size: 1.5rem;
+        position: relative;
+        left: 0rem;
+        top:30rem;
+        color: #a8a8a8;
+    }
+}
+ .home-side{
+    z-index: 999999;
+    position: fixed;
+    left:-14rem;
+    width:14rem !important;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    line-height: 3.5rem;
+    background-color: rgba(0, 0,0, 1);
+}
+
+ .home-side ul li{
+    list-style: none;
+}
+ .home-side ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.home-side:first-child a.close{  
+    /* background-color: #E68285; */
+    color: azure;
+    position: relative;
+    right: -80%;
+    top:-15rem;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.home-side:first-child a.close:hover ,.side-home span:hover{
+    cursor: pointer;
+}
+/*end home section */
+/*start duration section */
+#duration label{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    color: #fff;
+    background-color:var(--secton2-header-background-color);
+}
+#duration p{
+    width: 100%;
+    display: none;
+    margin-bottom: 0;
+    padding: 0.8rem;
+    background-color: var(--section2-paragraph-background-color);
+}
+/********* Time counting  *******/
+ .countLayer{
+    height: 60vh;
+    width: 100%;
+    background: url('../images/JoinUs.png');
+    background-repeat: no-repeat;
+    background-position: center center;    
+ }
+ .countLayer .countBackground{
+    height: 60vh;
+    width: 100%;
+    background-color: rgba(244, 38, 52, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+/* .countBackground .col-md-3{
+
+} */
+.daysBox,.hoursBox,.minBox,.secondsBox{
+    border: 2px #fff solid;
+    font-size: 2rem;
+    color: #fff;
+}
+
+/****** Start contact section *****/
+.contact-list{
+    line-height: 2.8rem;
+    margin-bottom: 1.8rem;
+}
+.contact-list .contact-email:not(i){
+    color: rgb(214, 4, 4);
+}
+.contact-email i{
+    color: #595C5F;
+}
+.social-icons li{
+    margin: 0 0.6rem;
+}
+.social-icons li a{
+    color: #7a7a7a;
+    transition: all 200ms;
+}
+.social-icons li div{
+    width: 2.6rem;
+    height: 2.6rem;
+    border:  1px #7a7a7a solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons li div:hover{
+    border:  1px #cf0c19 solid;
+    background-color: #cf0c19;
+}
+.social-icons li div:hover a {
+    color: #fff;
+}
+textarea[placeholder]{
+    color: #595C5F;
+}
+.myBtn{
+    padding: 0.8rem 0.9rem;
+    color: #fff;
+    background-color: #cf0c19;
+    border: none;
+    font-size: 1.2rem;
+}
+/****** End contact section *****/
+
+
